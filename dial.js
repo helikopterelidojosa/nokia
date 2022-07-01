@@ -133,7 +133,7 @@ function changeButtons() {
   document.getElementById("btn-uncall-end-call").style.display = "flex";
 
   document.getElementById("btn-call").style.display = "none";
-  document.getElementById("btn-call-calling").style.display = "flex";
+  document.getElementById("btn-call-calling").style.display = "block";
 }
 
 function calling() {

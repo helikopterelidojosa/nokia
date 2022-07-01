@@ -144,6 +144,7 @@ button {
 }
 
 #btn-call{
+  text-align: center;
     color: green;
 }
 
@@ -216,9 +217,14 @@ padding: 0;
 }
 
 #btn-call-calling{
+  text-align: center;
  color: green;
 }
 
 #btn-uncall-end-call{
   color: #a92e2e;
+}
+
+#number{
+  word-break: break-all;
 }
