@@ -144,9 +144,12 @@ function calling() {
 
 
 function uncall() {
+  document.getElementById("btn-call").style.display = "block";
+  document.getElementById("btn-call-calling").style.display = "none";
   document.getElementById("main-display").style.display = "flex";
   document.getElementById("dial-display").style.display = "none";
   document.getElementById("text-calling").style.display = "none";
+
   callingGoes = false;
   pickNumber = " ";
   document.getElementById("number").innerHTML = pickNumber;
