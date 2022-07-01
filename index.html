@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nokia</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
     <main>
@@ -37,62 +37,75 @@
 
           <!-- main display -->
         </div>
+
+        <div id="dial-display">
+            <p id="text-calling" style="display: none;">Calling...</p>
+            <p id="number"></p>
+        </div>
         <!-- display-with-black-margins -->
       </section>
 
-      <section id="btns">
-
-      
-      <section id="controls">
-
-        <div id="left-contols">
+      <section id="all-buttons">
+        <section id="controls">
+          <div id="left-contols">
             <button>-</button>
-            <br>
-            <button>call</button>
-        </div>
+            <br />
+            <button id="btn-call">call</button>
+<!-- making call -->
+            <button id="btn-call-calling" onclick="calling()" style="display: none;">call</button>
+          </div>
 
-        <div id="joystick">
-            <button id="select-btn">
-                sel
-            </button>
-        </div>
+          <div id="joystick">
+            <button class="joystick-lr" id="joystick-left"></button>
+            <div id="joystick-mid">
+              <button class="joystick-ud" id="joystick-up"></button>
+              <button id="select-btn">sel</button>
+              <button class="joystick-ud" id="joystick-down"></button>
+            </div>
+            <button class="joystick-lr" id="joystick-right"></button>
+            <!-- joystick      -->
+          </div>
 
-        <div id="right-contols">
+          <div id="right-contols">
             <button>-</button>
-            <br>
-            <button>uncall</button>
-        </div>
-      <!-- controls   -->
+            <br />
+            <button id="btn-uncall">uncall</button>
+            <button id="btn-uncall-end-call" onclick="uncall()" style="display: none;" >uncall</button>
+          </div>
+          <!-- controls   -->
+        </section>
+
+        <section id="dials">
+          <section class="dial-columns">
+            <button onclick="dial1()">1</button>
+            <button onclick="dial4()">4ghi</button>
+            <button onclick="dial7()">7pqrs</button>
+            <button onclick="dialpound()">*</button>
+          </section>
+
+          <section class="dial-columns">
+            <button onclick="dial2()">2abc</button>
+            <button onclick="dial5()">5jkl</button>
+            <button onclick="dial8()">8tuv</button>
+            <button onclick="dial0()">0</button>
+          </section>
+
+          <section class="dial-columns">
+            <button onclick="dial3()">3def</button>
+            <button onclick="dial6()">6mno</button>
+            <button onclick="dial9()">9wxyz</button>
+            <button onclick="dialhash()">#</button>
+          </section>
+
+          <!-- dials -->
+        </section>
+
+        <!-- btns -->
       </section>
 
-<section id="dials">
-    <button>1</button>
-    <button>2abc</button>
-    <button>3def</button>
-
-    <button>4ghi</button>
-    <button>5jkl</button>
-    <button>6mno</button>
-
-    <button>7pqrs</button>
-    <button>8tuv</button>
-    <button>9wxyz</button>
-
-    <button>*</button>
-    <button>0</button>
-    <button>#</button>
-<!-- dials -->
-</section>
-
-
-
-
-      <!-- btns -->
-    </section>
-
-<div id="microphone"></div>
-
+      <div id="microphone"></div>
     </main>
   </body>
-  <script src="./clock.js"></script>
+  <script src="./index/clock.js"></script>
+  <script src="./index/dial.js"></script>
 </html>

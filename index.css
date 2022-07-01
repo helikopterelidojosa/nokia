@@ -1,0 +1,224 @@
+body {
+  display: flex;
+  justify-content: center;
+
+  /* nedarbojas */
+  align-items: center;
+
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+main {
+  width: 200px;
+  height: 450px;
+  background-color: grey;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#dis-with-margins {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  height: 50%;
+  width: 95%;
+  border-radius: 18px;
+  margin: 5px;
+}
+
+h5 {
+  margin: auto;
+  color: gray;
+  text-align: center;
+}
+
+#speaker {
+  width: 25px;
+  height: 5px;
+  margin: auto;
+  background-color: grey;
+}
+
+#main-display {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 140px;
+  height: 160px;
+  margin: auto;
+  background-color: #00f;
+}
+
+#dial-display {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 140px;
+    height: 160px;
+    margin: auto;
+    background-color: #00f;
+    color: #fff;
+  }
+
+#number{
+    color: #fff;
+}
+  
+
+#info-panel * {
+  font-size: xx-small;
+  margin: 4px;
+}
+#sim1 {
+  color: #000;
+  background-color: white;
+  padding: 0 7px 0 7px;
+  border-radius: 5px;
+}
+#sim2 {
+  background-color: rgb(102, 102, 102);
+  padding: 0 7px 0 7px;
+  border-radius: 5px;
+}
+#antena1 {
+  color: #fff;
+}
+
+#upper-row {
+  text-align: right;
+}
+
+#batery {
+  color: white;
+}
+
+/* time 
+*/
+
+#MC {
+  font-size: xx-large;
+  color: #fff;
+  text-align: center;
+}
+
+#nav-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  color: white;
+  font-size: small;
+}
+
+#ce-nav {
+  font-size: large;
+}
+
+#all-buttons {
+    height: 35%;
+    width: 180px;
+
+    
+    display: flex;
+    flex-direction: column;
+  }
+
+button {
+  width: 50px;
+  height: 22px;
+  border-radius: 5px;
+  border-color: gray;
+  background-color: #000;
+  color: gray;
+  margin-bottom: 5px;
+}
+
+#controls {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+#btn-call{
+    color: green;
+}
+
+#btn-uncall{
+    color: #a92e2e;
+}
+
+
+#joystick {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.joystick-lr{
+width: 10px;
+height: 40px;
+margin: 0;
+padding: 0;
+
+}
+
+#joystick-mid{
+    width: 40px;
+    height: 50px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.joystick-ud{
+    width: 40px;
+    height: 8px;
+    margin: 0;
+    padding: 0;
+}
+
+#select-btn {
+  border-color: gray;
+  width: 35px;
+  height: 35px;
+  margin: 0;
+}
+
+#dials {
+    width: 195px;
+    margin: 0;
+    padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dial-columns{
+    margin: 0;
+}
+
+#microphone {
+  width: 7px;
+  height: 5px;
+  background-color: black;
+
+  margin: auto;
+}
+
+#btn-call-calling{
+ color: green;
+}
+
+#btn-uncall-end-call{
+  color: #a92e2e;
+}
